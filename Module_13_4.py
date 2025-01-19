@@ -20,7 +20,7 @@ async def start_message(message):
     await message.answer("Привет! Я бот помогающий твоему здоровью.")
 
 
-@dp.message_handler(text='calories')
+@dp.message_handler(text='Calories')
 async def set_age(message: types.Message):
     await message.answer('Введите свой возраст:')
     await UserState.age.set()
